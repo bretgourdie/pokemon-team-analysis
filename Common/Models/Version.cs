@@ -12,8 +12,6 @@ namespace Common.Models
 
         public string Name { get; set; }
 
-        public List<Name> Names { get; set; }
-
         public NamedAPIResource<VersionGroup> VersionGroup { get; set; }
     }
 }
