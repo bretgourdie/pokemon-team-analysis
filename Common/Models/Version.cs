@@ -6,16 +6,14 @@ using System.Threading.Tasks;
 
 namespace Common.Models
 {
-    public class Pokemon
+    public class Version
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
 
-        public int Order { get; set; }
+        public List<Name> Names { get; set; }
 
-        public List<PokemonType> Types { get; set; }
-
-        public List<VersionGameIndex> GameIndices { get; set; }
+        public NamedAPIResource<VersionGroup> VersionGroup { get; set; }
     }
 }
