@@ -48,10 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\PokeApi\PokeApiRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\PokeApi\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
