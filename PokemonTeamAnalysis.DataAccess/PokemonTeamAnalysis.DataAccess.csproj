@@ -55,7 +55,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Common\PokemonTeamAnalysis.Common.csproj">
+    <ProjectReference Include="..\PokemonTeamAnalysis.Common\PokemonTeamAnalysis.Common.csproj">
       <Project>{3c9fed84-1dd4-47eb-89d5-7267c3c19b09}</Project>
       <Name>PokemonTeamAnalysis.Common</Name>
     </ProjectReference>

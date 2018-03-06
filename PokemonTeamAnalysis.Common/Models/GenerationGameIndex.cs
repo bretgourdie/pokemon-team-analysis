@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Models
+namespace PokemonTeamAnalysis.Common.Models
 {
     public class GenerationGameIndex
     {
