@@ -27,5 +27,25 @@ namespace DataAccess.Repositories.PokeApi
 
             return response.Data;
         }
+
+        public T GetByName<T>(string resource, string sid) where T : new()
+        {
+            var request = new RestRequest();
+            request.Resource = resource + "/{" + resource + "Sid}/";
+            request.AddParameter(resource + "Sid", sid, ParameterType.UrlSegment);
+
+            return Execute<T>(request);
+        }
+
+        public T GetById<T>(string resource, int id) where T : new()
+        {
+            return GetByName<T>(resource, id.ToString());
+        }
+
+        public T GetByUrl<T>(string url) where T : new()
+        {
+            var request = new RestRequest(new Uri(url));
+            return Execute<T>(request);
+        }
     }
 }
