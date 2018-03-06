@@ -48,5 +48,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PokemonTeamAnalysis.Common\PokemonTeamAnalysis.Common.csproj">
+      <Project>{3c9fed84-1dd4-47eb-89d5-7267c3c19b09}</Project>
+      <Name>PokemonTeamAnalysis.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PokemonTeamAnalysis.DataAccess\PokemonTeamAnalysis.DataAccess.csproj">
+      <Project>{658da7bb-f16d-4357-b82e-cf9dc3861e22}</Project>
+      <Name>PokemonTeamAnalysis.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
