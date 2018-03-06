@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PokemonTeamAnalysis.Common.Models;
+using PokemonTeamAnalysis.DataAccess.Repositories.PokeApi;
 
 namespace PokemonTeamAnalysis.CLIApp
 {
@@ -15,7 +17,9 @@ namespace PokemonTeamAnalysis.CLIApp
 
         static void testProgram()
         {
-            
+            var repo = new PokeApiRepository();
+
+            var entity = repo.GetById<Pokemon>("pokemon", 25);
         }
     }
 }
