@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Models
 {
-    public class VersionGameIndex : PokeApiModel
+    public class VersionGameIndex
     {
         public int GameIndex { get; set; }
 

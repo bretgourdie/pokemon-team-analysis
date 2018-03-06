@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Models
 {
-    public class Generation
+    public class Generation : PokeApiModel
     {
         public int Id { get; set; }
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Models
 {
-    public class TypeRelations : PokeApiModel
+    public class TypeRelations
     {
         public List<NamedAPIResource<Common.Models.Type>> NoDamageTo { get; set; }
 
