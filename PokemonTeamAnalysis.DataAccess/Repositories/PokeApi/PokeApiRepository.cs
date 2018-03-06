@@ -26,6 +26,20 @@ namespace PokemonTeamAnalysis.DataAccess.Repositories.PokeApi
                 throw exception;
             }
 
+            else if (response.ResponseStatus != ResponseStatus.Completed)
+            {
+                const string message = "Error transporting response. Check server status. ResponseStatus: {0}";
+                var exception = new ApplicationException(String.Format(message, response.ResponseStatus));
+                throw exception;
+            }
+
+            else if (!response.IsSuccessful)
+            {
+                const string message = "Request was not successful. Response status code: {0}";
+                var exception = new ApplicationException(String.Format(message, response.StatusCode));
+                throw exception;
+            }
+
             return response.Data;
         }
 
