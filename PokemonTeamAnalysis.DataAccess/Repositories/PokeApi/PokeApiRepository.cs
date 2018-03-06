@@ -29,7 +29,7 @@ namespace PokemonTeamAnalysis.DataAccess.Repositories.PokeApi
             return response.Data;
         }
 
-        public T GetByName<T>(string sid) where T : PokeApiModel, new()
+        public T Get<T>(string sid) where T : PokeApiModel, new()
         {
             var request = new RestRequest();
             var instance = Activator.CreateInstance<T>();
@@ -40,14 +40,14 @@ namespace PokemonTeamAnalysis.DataAccess.Repositories.PokeApi
             return Execute<T>(request);
         }
 
-        public T GetById<T>(int id) where T : PokeApiModel, new()
+        public T Get<T>(int id) where T : PokeApiModel, new()
         {
-            return GetByName<T>(id.ToString());
+            return Get<T>(id.ToString());
         }
 
-        public T GetByUrl<T>(string url) where T : new()
+        public T Get<T>(Uri url) where T : new()
         {
-            var request = new RestRequest(new Uri(url));
+            var request = new RestRequest(url);
             return Execute<T>(request);
         }
     }
