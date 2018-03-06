@@ -50,6 +50,7 @@
     <Compile Include="Models\Generation.cs" />
     <Compile Include="Models\GenerationGameIndex.cs" />
     <Compile Include="Models\NamedAPIResource.cs" />
+    <Compile Include="Models\PokeApiModel.cs" />
     <Compile Include="Models\Pokemon.cs" />
     <Compile Include="Models\PokemonType.cs" />
     <Compile Include="Models\TypeRelations.cs" />

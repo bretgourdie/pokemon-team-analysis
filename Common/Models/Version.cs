@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Models
 {
-    public class Version
+    public class Version : PokeApiModel
     {
         public int Id { get; set; }
 

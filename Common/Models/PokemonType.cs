@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Common.Models
 {
-    public class PokemonType
+    public class PokemonType : PokeApiModel
     {
         public int Id { get; set; }
 
