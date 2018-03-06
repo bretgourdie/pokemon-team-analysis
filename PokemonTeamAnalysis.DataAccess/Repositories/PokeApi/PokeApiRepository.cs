@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
 
-namespace DataAccess.Repositories.PokeApi
+namespace PokemonTeamAnalysis.DataAccess.Repositories.PokeApi
 {
     public class PokeApiRepository
     {
