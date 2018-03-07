@@ -16,9 +16,14 @@ namespace PokemonTeamAnalysis.Common.Models
         {
             get
             {
-                var name = this.GetType().Name;
-                return Regex.Replace(name, @"(?<!_|^)([A-Z])", "-$1").ToLower();
+                return getClassNameAsResourceName();
             }
+        }
+
+        private string getClassNameAsResourceName()
+        {
+            var name = this.GetType().Name;
+            return Regex.Replace(name, @"(?<!_|^)([A-Z])", "-$1").ToLower();
         }
     }
 }

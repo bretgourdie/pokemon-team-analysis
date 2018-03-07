@@ -8,17 +8,17 @@ namespace PokemonTeamAnalysis.Common.Models
 {
     public class TypeRelations
     {
-        public List<NamedAPIResource<Common.Models.Type>> NoDamageTo { get; set; }
+        public List<NamedAPIResource<SingleType>> NoDamageTo { get; set; }
 
-        public List<NamedAPIResource<Common.Models.Type>> HalfDamageTo { get; set; }
+        public List<NamedAPIResource<SingleType>> HalfDamageTo { get; set; }
 
-        public List<NamedAPIResource<Common.Models.Type>> DoubleDamageTo { get; set; }
+        public List<NamedAPIResource<SingleType>> DoubleDamageTo { get; set; }
 
-        public List<NamedAPIResource<Common.Models.Type>> NoDamageFrom { get; set; }
+        public List<NamedAPIResource<SingleType>> NoDamageFrom { get; set; }
 
-        public List<NamedAPIResource<Common.Models.Type>> HalfDamageFrom { get; set; }
+        public List<NamedAPIResource<SingleType>> HalfDamageFrom { get; set; }
 
-        public List<NamedAPIResource<Common.Models.Type>> DoubleDamageFrom { get; set; }
+        public List<NamedAPIResource<SingleType>> DoubleDamageFrom { get; set; }
 
     }
 }

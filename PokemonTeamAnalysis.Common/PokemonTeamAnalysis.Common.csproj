@@ -53,7 +53,7 @@
     <Compile Include="Models\PokeApiModel.cs" />
     <Compile Include="Models\Pokemon.cs" />
     <Compile Include="Models\PokemonType.cs" />
-    <Compile Include="Models\Type.cs" />
+    <Compile Include="Models\SingleType.cs" />
     <Compile Include="Models\TypePokemon.cs" />
     <Compile Include="Models\TypeRelations.cs" />
     <Compile Include="Models\Version.cs" />

@@ -10,6 +10,6 @@ namespace PokemonTeamAnalysis.Common.Models
     {
         public int Slot { get; set; }
 
-        public NamedAPIResource<Type> Type { get; set; }
+        public NamedAPIResource<SingleType> Type { get; set; }
     }
 }

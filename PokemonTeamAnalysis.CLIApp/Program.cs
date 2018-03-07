@@ -19,7 +19,7 @@ namespace PokemonTeamAnalysis.CLIApp
         {
             var repo = new PokeApiRepository();
 
-            var entity = repo.Get<Pokemon>("Dugtrio");
+            var entity = repo.Get<SingleType>("ghost");
         }
     }
 }
