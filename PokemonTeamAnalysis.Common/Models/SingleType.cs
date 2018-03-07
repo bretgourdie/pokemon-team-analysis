@@ -17,9 +17,9 @@ namespace PokemonTeamAnalysis.Common.Models
 
         public string Name { get; set; }
 
-        public TypeRelations TypeRelations { get; set; }
+        public TypeRelations DamageRelations { get; set; }
 
-        public List<GenerationGameIndex> Game_Indices { get; set; }
+        public List<GenerationGameIndex> GameIndices { get; set; }
 
         public NamedAPIResource<Generation> Generation { get; set; }
 
