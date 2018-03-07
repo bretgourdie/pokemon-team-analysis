@@ -10,6 +10,6 @@ namespace PokemonTeamAnalysis.Common.Models
     {
         public int GameIndex { get; set; }
 
-        public NamedAPIResource<Version> Version { get; set; }
+        public NamedAPIResource<GameVersion> Version { get; set; }
     }
 }

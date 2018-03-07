@@ -14,6 +14,6 @@ namespace PokemonTeamAnalysis.Common.Models
 
         public NamedAPIResource<Generation> Generation { get; set; }
 
-        public List<NamedAPIResource<Version>> Versions { get; set; }
+        public List<NamedAPIResource<GameVersion>> Versions { get; set; }
     }
 }

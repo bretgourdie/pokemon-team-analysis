@@ -56,7 +56,7 @@
     <Compile Include="Models\SingleType.cs" />
     <Compile Include="Models\TypePokemon.cs" />
     <Compile Include="Models\TypeRelations.cs" />
-    <Compile Include="Models\Version.cs" />
+    <Compile Include="Models\GameVersion.cs" />
     <Compile Include="Models\VersionGameIndex.cs" />
     <Compile Include="Models\VersionGroup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
