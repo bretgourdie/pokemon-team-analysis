@@ -12,5 +12,6 @@ namespace PokemonTeamAnalysis.Common.Models
 
         public string Name { get; set; }
 
+        public List<NamedAPIResource<VersionGroup>> VersionGroups { get; set; }
     }
 }
