@@ -10,7 +10,8 @@ namespace PokemonTeamAnalysis.Logic.Repositories
 {
     public class PokeApiRepository
     {
-        const string baseUrl = "https://pokeapi.co/api/v2/";
+        //const string baseUrl = "https://pokeapi.co/api/v2/";
+        const string baseUrl = "https://pokeapi.co/";
 
         public T Execute<T>(RestRequest request) where T : new()
         {
@@ -44,9 +45,10 @@ namespace PokemonTeamAnalysis.Logic.Repositories
 
         public T Get<T>(string sid) where T : PokeApiModel, new()
         {
+            const string versionPrefix = "api/v2";
             var request = new RestRequest();
             var instance = Activator.CreateInstance<T>();
-            var resource = instance.ResourceName;
+            var resource = versionPrefix + "/" + instance.ResourceName;
             request.Resource = resource + "/{" + resource + "Sid}/";
             request.AddParameter(resource + "Sid", sid.ToLower(), ParameterType.UrlSegment);
 
@@ -60,9 +62,7 @@ namespace PokemonTeamAnalysis.Logic.Repositories
 
         public T Get<T>(Uri uri) where T : new()
         {
-            var strippedUrl = uri.OriginalString.Replace(baseUrl, "");
-            var request = new RestRequest();
-            request.Resource = strippedUrl;
+            var request = new RestRequest(uri);
             return Execute<T>(request);
         }
     }

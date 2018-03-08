@@ -20,6 +20,8 @@ namespace PokemonTeamAnalysis.CLIApp
             var repo = new PokeApiRepository();
 
             var entity = repo.Get<GameVersion>("ruby");
+
+            var namedAPIResource = entity.VersionGroup.Content;
         }
     }
 }
