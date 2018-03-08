@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 
-namespace PokemonTeamAnalysis.Common.Models
+namespace PokemonTeamAnalysis.Logic.Models
 {
     public abstract class PokeApiModel
     {

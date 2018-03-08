@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using RestSharp.Deserializers;
 
-namespace PokemonTeamAnalysis.Common.Models
+namespace PokemonTeamAnalysis.Logic.Models
 {
     [DeserializeAs(Name = "Type")]
     public class SingleType : PokeApiModel

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PokemonTeamAnalysis.Common.Models;
-using PokemonTeamAnalysis.DataAccess.Repositories;
+using PokemonTeamAnalysis.Logic.Models;
+using PokemonTeamAnalysis.Logic.Repositories;
 
 namespace PokemonTeamAnalysis.CLIApp
 {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PokemonTeamAnalysis.Common.Models
+namespace PokemonTeamAnalysis.Logic.Models
 {
     public class Pokemon : PokeApiModel
     {

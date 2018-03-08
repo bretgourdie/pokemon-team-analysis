@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RestSharp;
-using PokemonTeamAnalysis.Common.Models;
+using PokemonTeamAnalysis.Logic.Models;
 
-namespace PokemonTeamAnalysis.DataAccess.Repositories
+namespace PokemonTeamAnalysis.Logic.Repositories
 {
     public class PokeApiRepository
     {
