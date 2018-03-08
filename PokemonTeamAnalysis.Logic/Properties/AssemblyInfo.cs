@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Common")]
+[assembly: AssemblyTitle("PokemonTeamAnalysis.Logic")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Common")]
+[assembly: AssemblyProduct("PokemonTeamAnalysis.Logic")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3c9fed84-1dd4-47eb-89d5-7267c3c19b09")]
+[assembly: Guid("dbc35795-5669-4059-b770-79a05e37e8b2")]
 
 // Version information for an assembly consists of the following four values:
 //
