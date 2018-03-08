@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PokemonTeamAnalysis.Logic.Repositories;
 
 namespace PokemonTeamAnalysis.Logic.Models
 {
@@ -34,7 +35,8 @@ namespace PokemonTeamAnalysis.Logic.Models
 
         protected T getContent()
         {
-            throw new NotImplementedException();
+            var pokeApiRepo = new PokeApiRepository();
+            return pokeApiRepo.Get<T>(new Uri(Url));
         }
     }
 }
