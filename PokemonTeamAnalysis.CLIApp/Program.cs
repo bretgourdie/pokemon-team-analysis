@@ -12,16 +12,6 @@ namespace PokemonTeamAnalysis.CLIApp
     {
         static void Main(string[] args)
         {
-            testProgram();
-        }
-
-        static void testProgram()
-        {
-            var repo = new PokeApiRepository();
-
-            var entity = repo.Get<GameVersion>("ruby");
-
-            var namedAPIResource = entity.VersionGroup.Content;
         }
     }
 }
