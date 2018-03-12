@@ -12,6 +12,12 @@ namespace PokemonTeamAnalysis.CLIApp
     {
         static void Main(string[] args)
         {
+            var pokemonList = promptForPokemon();
+        }
+
+        static IList<Pokemon> promptForPokemon()
+        {
+            return new PromptForPokemon().PromptAndFindPokemon();
         }
     }
 }
