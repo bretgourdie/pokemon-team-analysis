@@ -17,7 +17,9 @@ namespace PokemonTeamAnalysis.Logic.Models
 
         public string Name { get; set; }
 
-        public TypeRelations DamageRelations { get; set; }
+        public int TypeRelationsId { get; set; }
+
+        public virtual TypeRelations DamageRelations { get; set; }
 
         public List<GenerationGameIndex> GameIndices { get; set; }
 

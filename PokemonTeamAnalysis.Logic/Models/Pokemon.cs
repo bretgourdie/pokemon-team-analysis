@@ -14,8 +14,8 @@ namespace PokemonTeamAnalysis.Logic.Models
 
         public int Order { get; set; }
 
-        public List<PokemonType> Types { get; set; }
+        public virtual List<PokemonType> Types { get; set; }
 
-        public List<VersionGameIndex> GameIndices { get; set; }
+        public virtual List<VersionGameIndex> GameIndices { get; set; }
     }
 }

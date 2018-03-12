@@ -8,8 +8,14 @@ namespace PokemonTeamAnalysis.Logic.Models
 {
     public class PokemonType
     {
+        public int Id { get; set; }
+
         public int Slot { get; set; }
 
-        public NamedAPIResource<SingleType> Type { get; set; }
+        public int PokemonId { get; set; }
+
+        public int SingleTypeId { get; set; }
+
+        public virtual NamedAPIResource<SingleType> Type { get; set; }
     }
 }
