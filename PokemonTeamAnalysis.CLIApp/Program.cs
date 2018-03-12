@@ -13,6 +13,12 @@ namespace PokemonTeamAnalysis.CLIApp
         static void Main(string[] args)
         {
             var pokemonList = promptForPokemon();
+            // Pokemon
+            // - PokemonType
+            //   - SingleType
+            //     - TypeRelations
+            //       - SingleType
+            //       - etc.
         }
 
         static IList<Pokemon> promptForPokemon()
