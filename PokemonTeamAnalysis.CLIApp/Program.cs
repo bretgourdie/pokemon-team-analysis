@@ -13,12 +13,26 @@ namespace PokemonTeamAnalysis.CLIApp
         static void Main(string[] args)
         {
             var pokemonList = promptForPokemon();
+
+            if (isValidPokemonList(pokemonList))
+            {
+                processPokemonList(pokemonList);
+            }
+        }
+
+        static void processPokemonList(IList<Pokemon> pokemonList)
+        {
             // Pokemon
             // - PokemonType
             //   - SingleType
             //     - TypeRelations
             //       - SingleType
             //       - etc.
+        }
+
+        static bool isValidPokemonList(IList<Pokemon> pokemonList)
+        {
+            return pokemonList != null && pokemonList.Count > 0;
         }
 
         static IList<Pokemon> promptForPokemon()
