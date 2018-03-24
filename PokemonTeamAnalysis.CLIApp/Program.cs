@@ -23,7 +23,7 @@ namespace PokemonTeamAnalysis.CLIApp
 
         static IList<Pokemon> promptForPokemon()
         {
-            return new PromptForPokemon().PromptAndFindPokemon();
+            return PromptForPokemon.PromptAndFindPokemon();
         }
     }
 }

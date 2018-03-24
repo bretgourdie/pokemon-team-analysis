@@ -10,14 +10,14 @@ namespace PokemonTeamAnalysis.CLIApp
 {
     class PromptForPokemon
     {
-        public IList<Pokemon> PromptAndFindPokemon()
+        public static IList<Pokemon> PromptAndFindPokemon()
         {
             var inputPokemonList = getUserPokemonList();
 
             return getPokemonFromInput(inputPokemonList);
         }
 
-        private IList<string> getUserPokemonList()
+        private static IList<string> getUserPokemonList()
         {
             Console.WriteLine("Enter the team, entering a blank line as the end.");
 
@@ -38,7 +38,7 @@ namespace PokemonTeamAnalysis.CLIApp
             return inputPokemonList;
         }
 
-        private IList<Pokemon> getPokemonFromInput(IList<string> inputPokemonList)
+        private static IList<Pokemon> getPokemonFromInput(IList<string> inputPokemonList)
         {
             var pokemonList = new List<Pokemon>();
 
@@ -78,7 +78,7 @@ namespace PokemonTeamAnalysis.CLIApp
             return pokemonList;
         }
 
-        private bool inputIsNotEnding(string input)
+        private static bool inputIsNotEnding(string input)
         {
             return input.Trim() != "";
         }
