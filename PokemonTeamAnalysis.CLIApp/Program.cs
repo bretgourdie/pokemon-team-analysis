@@ -16,27 +16,31 @@ namespace PokemonTeamAnalysis.CLIApp
 
             if (isValidPokemonList(pokemonList))
             {
-                processPokemonList(pokemonList);
+                var typeRelationsByPokemon = getTypeRelationsByPokemon(pokemonList);
             }
         }
 
-        static void processPokemonList(IList<Pokemon> pokemonList)
+        static IDictionary<Pokemon, IList<TypeRelations>> getTypeRelationsByPokemon(IList<Pokemon> pokemonList)
         {
+            IDictionary<Pokemon, IList<TypeRelations>> typeRelationsByPokemon = new Dictionary<Pokemon, IList<TypeRelations>>();
+
             foreach (var pokemon in pokemonList)
             {
+                var typeRelationsList = new List<TypeRelations>();
+
                 foreach (var pokemonType in pokemon.Types)
                 {
                     var singleType = pokemonType.Type.Content;
 
+                    var damageRelations = singleType.DamageRelations;
 
+                    typeRelationsList.Add(damageRelations);
                 }
+
+                typeRelationsByPokemon[pokemon] = typeRelationsList;
             }
-            // Pokemon
-            // - PokemonType
-            //   - SingleType
-            //     - TypeRelations
-            //       - SingleType
-            //       - etc.
+
+            return typeRelationsByPokemon;
         }
 
         static bool isValidPokemonList(IList<Pokemon> pokemonList)
