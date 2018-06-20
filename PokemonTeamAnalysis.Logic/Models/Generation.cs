@@ -13,5 +13,10 @@ namespace PokemonTeamAnalysis.Logic.Models
         public string Name { get; set; }
 
         public List<NamedAPIResource<VersionGroup>> VersionGroups { get; set; }
+
+        public override string ToString()
+        {
+            return this.Name;
+        }
     }
 }

@@ -25,5 +25,9 @@ namespace PokemonTeamAnalysis.Logic.Models
 
         public NamedAPIResource<Generation> Generation { get; set; }
 
+        public override string ToString()
+        {
+            return this.Name;
+        }
     }
 }

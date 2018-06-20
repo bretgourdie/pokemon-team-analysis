@@ -17,5 +17,10 @@ namespace PokemonTeamAnalysis.Logic.Models
         public virtual List<PokemonType> Types { get; set; }
 
         public virtual List<VersionGameIndex> GameIndices { get; set; }
+
+        public override string ToString()
+        {
+            return this.Name;
+        }
     }
 }
